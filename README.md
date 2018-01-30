@@ -1,1 +1,1 @@
-# BringMeToClass
+# SweCamp
