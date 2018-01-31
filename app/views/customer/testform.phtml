@@ -1,0 +1,38 @@
+
+
+<?php
+  echo $this->tag->form(
+      [
+        "customer/onGoingSave",
+        "autocomplete" => "off",
+        "class" => "form-horizontal"
+      ] );
+?>
+
+  <div class="form-row">
+    <div class="col-7">
+    <?php echo $this->tag->textField(["CusName", "size" => 30, "class" => "form-control", "id" =>"CusName", "required" =>"", "placeholder" =>"Firstname"]) ?>
+
+      <!-- <input type="text" class="form-control" placeholder="City"> -->
+    </div>
+   
+    <div class="col">
+      <?php echo $this->tag->textField(["CusSir", "size" => 30, "class" => "form-control", "id" =>"CusSir", "required" =>"", "placeholder" =>"Lastname"]) ?>
+
+    </div>
+
+    <div class="col">
+      <?php echo $this->tag->textField(["Here", "size" => 30, "class" => "form-control", "id" =>"Here", "required" =>"", "placeholder" =>"Lastname"]) ?>
+
+    </div>
+
+    <div class="col">
+      <?php echo $this->tag->textField(["Going", "size" => 30, "class" => "form-control", "id" =>"Going", "required" =>"", "placeholder" =>"Lastname"]) ?>
+
+    </div>
+
+    <?php echo $this->tag->submitButton(["บันทึก", "class" => "btn btn-info"]) ?>
+  </div>
+   
+<?php echo $this->tag->endForm(); ?>
+
