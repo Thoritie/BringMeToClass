@@ -22,10 +22,15 @@
                       <ul class="navbar-nav mr-auto">
                 
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Customer</a>
+                          <a class="nav-link" href="customer/">Let's ride</a>
                         </li>
+                       
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Driver</a>
+                          <a class="nav-link" href="#">Check</a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Driver</a>
                         </li>
                 
                       </ul>
