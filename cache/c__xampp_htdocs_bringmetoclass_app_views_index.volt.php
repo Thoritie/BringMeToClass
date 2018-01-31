@@ -32,8 +32,12 @@
                 
                     </div>
                   </nav>
+<<<<<<< HEAD
         <div class="" style="">
+=======
+>>>>>>> 0d4f488c4a2e84130d38e91d1e7827c877d6f64b
 
+        <div class="" style="">
             <?= $this->getContent() ?>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -8,5 +8,10 @@ class DriverController extends ControllerBase
 
     }
 
+    public function acceptAction()
+    {
+
+    }
+
 }
 
