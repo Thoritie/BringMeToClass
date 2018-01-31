@@ -34,6 +34,8 @@ class Pass extends \Phalcon\Mvc\Model
      */
     public $Going;
 
+    public $passStatus;
+
    
 
     /**
