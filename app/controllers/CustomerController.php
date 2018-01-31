@@ -3,20 +3,23 @@
 class CustomerController extends ControllerBase
 {
 
-    public function indexAction() 
+    public function indexAction()
     {
 
     }
 
-    
+
     public function testformAction(){
 
+    }
+    public function formpassageAction(){
+      
     }
 
 
     public function createPassAction(){
 
-       
+
 
 
 
@@ -77,7 +80,7 @@ class CustomerController extends ControllerBase
         $pass->Going = $this->request->getPost("Going");
 
         $pass->save();
-    
+
     }
 
 
@@ -182,7 +185,6 @@ class CustomerController extends ControllerBase
 }
 
 
-   
+
 
 }
-

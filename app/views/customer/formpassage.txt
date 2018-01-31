@@ -1,0 +1,30 @@
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Bring Me To Class</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Driver</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <span class="navbar-brand mb-0 h1">Navbar</span>
+</nav>
+<div class="container">
+
+
+
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
