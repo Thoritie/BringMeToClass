@@ -32,7 +32,11 @@
                 
                     </div>
                   </nav>
+<<<<<<< HEAD
         <div class="" style="">
+=======
+        <div class="" style="margin-top: 100px">
+>>>>>>> 7d23c744ffc5eaf7a6051134b368d0968cd0a674
 
             <?= $this->getContent() ?>
         </div>
