@@ -32,7 +32,6 @@
                 
                     </div>
                   </nav>
-
         <div class="" style="">
             <?= $this->getContent() ?>
         </div>
