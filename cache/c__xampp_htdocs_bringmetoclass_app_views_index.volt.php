@@ -33,7 +33,6 @@
                     </div>
                   </nav>
         <div class="" style="">
-
             <?= $this->getContent() ?>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
