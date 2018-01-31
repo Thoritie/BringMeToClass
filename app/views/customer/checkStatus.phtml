@@ -16,7 +16,7 @@
   </p>
 </div>-->
 
-
+<br>
 <div class="container">
   
   <h1><p style="text-align : center">Check Status</p></h1><?php echo "<br>"; ?>
@@ -26,8 +26,13 @@
 <div class="row">
     <?php foreach ($pass as $pass): ?>
     <div class="col-md-4">
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">รับแล้ว</div>
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">
+                <?php if($pass->passStatus == 1){
+                    echo "รับแล้ว" ;
+                }else echo "รอรับ" ;
+                ?>
+            </div>
                 <div class="card-body"> 
                     <p class="card-text">ชื่อ : <?php echo $pass->CusName ; ?></p>
                     <p class="card-text">นามสกุล : <?php echo $pass->CusSir ; ?></p>
