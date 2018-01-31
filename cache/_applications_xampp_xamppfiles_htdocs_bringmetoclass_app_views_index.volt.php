@@ -22,15 +22,15 @@
                       <ul class="navbar-nav mr-auto">
                 
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Let's ride</a>
+                          <a class="nav-link" href="Customer/formpassage">Let's ride</a>
                         </li>
                        
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Check</a>
+                          <a class="nav-link" href="Customer/checkStatus">Check</a>
                         </li>
 
                         <li class="nav-item">
-                                <a class="nav-link" href="#">Driver</a>
+                                <a class="nav-link" href="driver/accept">Driver</a>
                         </li>
                 
                       </ul>
