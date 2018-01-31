@@ -1,0 +1,49 @@
+
+
+  <span class="navbar-brand mb-0 h1">Navbar</span>
+</nav>
+<div class="container">
+
+
+
+<!-- <div class="jumbotron">
+  <h1 class="display-4">Hello, Customer!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>-->
+
+
+<div class="container">
+  
+  <h1><p style="text-align : center">Check Status</p></h1><?php echo "<br>"; ?>
+  <!-- <div class="col-sm-5" class="display: inline-block">
+
+</div> -->
+<div class="row">
+    <?php foreach ($pass as $pass): ?>
+    <div class="col-md-4">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">รับแล้ว</div>
+                <div class="card-body"> 
+                    <p class="card-text">ชื่อ : <?php echo $pass->CusName ; ?></p>
+                    <p class="card-text">นามสกุล : <?php echo $pass->CusSir ; ?></p>
+                    <p class="card-text">จุดเริ่มต้น : <?php echo $pass->Here;?></p>
+                    <p class="card-text">จุดหมายปลายทาง : <?php echo $pass->Going; ?></p>
+                </div>
+        </div>
+    </div>
+    <?php endforeach; ?>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

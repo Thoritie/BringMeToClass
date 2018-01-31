@@ -3,24 +3,44 @@
 class CustomerController extends ControllerBase
 {
 
-    public function indexAction() 
+    public function indexAction()
     {
 
     }
 
-    
+
     public function testformAction(){
 
+    }
+    public function formpassageAction(){
+      
     }
 
 
     public function createPassAction(){
 
-       
 
 
 
 
+
+
+    }
+
+    public function checkStatusAction(){
+        $parameters["order"] = "CusName";
+        $pass = Pass::find($parameters);
+
+        if (count($pass) == 0) {
+            $this->flash->notice("The search did not find any activity");
+
+            $this->dispatcher->forward([
+                "controller" => "pass",
+                "action" => "index"
+            ]);
+            return;
+        }
+        $this->view->pass = $pass;
 
     }
 
@@ -77,7 +97,7 @@ class CustomerController extends ControllerBase
         $pass->Going = $this->request->getPost("Going");
 
         $pass->save();
-    
+
     }
 
 
@@ -182,7 +202,6 @@ class CustomerController extends ControllerBase
 }
 
 
-   
+
 
 }
-
