@@ -32,7 +32,7 @@
                 
                     </div>
                   </nav>
-        <div class="" style="margin-top: 100px">
+        <div class="" style="">
 
             <?= $this->getContent() ?>
         </div>
