@@ -6,7 +6,7 @@
 
 
 
-<div class="jumbotron">
+<!-- <div class="jumbotron">
   <h1 class="display-4">Hello, Customer!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
@@ -14,7 +14,7 @@
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
-</div>
+</div>-->
 
 
 <div class="container">
@@ -23,7 +23,21 @@
   <!-- <div class="col-sm-5" class="display: inline-block">
 
 </div> -->
-
+<div class="row">
+    <?php foreach ($pass as $pass): ?>
+    <div class="col-md-4">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">รับแล้ว</div>
+                <div class="card-body"> 
+                    <p class="card-text">ชื่อ : <?php echo $pass->CusName ; ?></p>
+                    <p class="card-text">นามสกุล : <?php echo $pass->CusSir ; ?></p>
+                    <p class="card-text">จุดเริ่มต้น : <?php echo $pass->Here;?></p>
+                    <p class="card-text">จุดหมายปลายทาง : <?php echo $pass->Going; ?></p>
+                </div>
+        </div>
+    </div>
+    <?php endforeach; ?>
+</div>
 
 
     <!-- Optional JavaScript -->
@@ -33,6 +47,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-  <center><img src="bgwu." alt="me" width="20%" height="8%"/></center>
