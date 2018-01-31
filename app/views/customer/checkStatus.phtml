@@ -23,10 +23,19 @@
   <!-- <div class="col-sm-5" class="display: inline-block">
 
 </div> -->
+
 <div class="row">
     <?php foreach ($pass as $pass): ?>
+    <?php $colorbg = array("bg-info","bg-primary","bg-secondary","bg-success","bg-danger","bg-warning","bg-dark");
+    $colorcbg = rand(0,6);
+    for($i=0;$i<7;$i++){
+        if($colorcbg == $i){
+            $colorcbg = $colorbg[$i] ;
+        }
+    }
+    ?>
     <div class="col-md-4">
-        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+        <div class="card text-white <?php echo $colorcbg ?> mb-3" style="max-width: 18rem;">
             <div class="card-header">
                 <?php if($pass->passStatus == 1){
                     echo "รับแล้ว" ;
