@@ -1,8 +1,6 @@
 
-
-  <span class="navbar-brand mb-0 h1">Navbar</span>
-</nav>
-<div class="container">
+<div class="container" style="
+    margin-top: 100px">
 
 
 
@@ -26,8 +24,8 @@
 
 <div class="row">
     <?php foreach ($pass as $pass): ?>
-    <?php $colorbg = array("bg-info","bg-primary","bg-secondary","bg-success","bg-danger","bg-warning","bg-dark");
-    $colorcbg = rand(0,6);
+    <?php $colorbg = array("bg-primary","bg-secondary","bg-dark");
+    $colorcbg = rand(0,2);
     for($i=0;$i<7;$i++){
         if($colorcbg == $i){
             $colorcbg = $colorbg[$i] ;
@@ -47,6 +45,9 @@
                     <p class="card-text">นามสกุล : <?php echo $pass->CusSir ; ?></p>
                     <p class="card-text">จุดเริ่มต้น : <?php echo $pass->Here;?></p>
                     <p class="card-text">จุดหมายปลายทาง : <?php echo $pass->Going; ?></p>
+                    
+                    <h4 id="demo"></h4>
+
                 </div>
         </div>
     </div>
@@ -56,6 +57,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

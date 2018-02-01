@@ -5,7 +5,7 @@
 
 <div class="container" style="margin-top : 100px">
   
-  <h1><p style="text-align : center">Accept</p></h1><?php echo "<br>"; ?>
+  <h1><p style="text-align : center">Come With Me</p></h1><?php echo "<br>"; ?>
 
 </div>
 
@@ -21,7 +21,7 @@
     }
     ?>
     <div class="col-md-4">
-        <div class="card text-white <?php echo $colorcbg ?> mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
             <div class="card-header">
                 <?php if($pass->passStatus == 1){
                     echo "รับแล้ว" ;
@@ -35,12 +35,19 @@
                     <p class="card-text">จุดหมายปลายทาง : <?php echo $pass->Going; ?></p>
                 </div>
                 <div class="card-footer">
-                <button type="button" class="btn btn-success">ตอบรับ</button>
-                <button type="button" class="btn btn-danger">ปฏิเสธ</button>
-
-
+                <button type="button" class="btn btn-success">ไปด้วย</button>
+                
                 </div>
         </div>
     </div>
     <?php endforeach; ?>
 </div>
+
+<?php
+$date = strtotime("December 3, 2014 2:00 PM");
+$remaining = $date - time();
+$days_remaining = floor($remaining / 86400);
+$hours_remaining = floor(($remaining % 86400) / 3600);
+?>
+ 
+<h1>There are <span class="green"> <?php echo $days_remaining?></span> days and <span class="green"> <?php echo $hours_remaining?></span> hours left</h1>
