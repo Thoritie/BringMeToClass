@@ -1,4 +1,5 @@
 <?php
+use Phalcon\Http\Response;
 
 class CustomerController extends ControllerBase
 {
@@ -49,6 +50,11 @@ class CustomerController extends ControllerBase
         $pass->passStatus= 0 ;
 
         $pass->save();
+
+        $response = new Response();
+
+       return $response->redirect("Customer/checkStatus");
+
 
     }
 
