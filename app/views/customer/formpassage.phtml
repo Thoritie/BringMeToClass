@@ -1,29 +1,16 @@
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Bring Me To Class</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<?php
+  echo $this->tag->form(
+      [
+        "customer/onGoingSave",
+        "autocomplete" => "off",
+        "class" => "form-horizontal"
+      ] );
+?>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Customer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Driver</a>
-        </li>
-
-      </ul>
-
-    </div>
-  </nav>
-  <span class="navbar-brand mb-0 h1">Navbar</span>
-</nav>
 <div class="container">
-
-  <div class="jumbotron">
+  <div class="jumbotron" style="
+    margin-top: 100px">
           <div class="container">
             <h1 class="display-3">Hello, Customer</h1>
             <p>โปรดกรอกข้อมูลให้ครบถ้วนเพื่อผลประโยชน์ของตัวท่าน</p>
@@ -33,13 +20,17 @@
 
 <br>
 
+
+<div class="col-md-6 col-md-offset-3">
 <div class="row">
   <div class="col">
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">First Name</span>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      <!-- <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"> -->
+      <?php echo $this->tag->textField(["CusName", "size" => 30, "class" => "form-control", "id" =>"CusName", "required" =>"", "placeholder" =>"Firstname", "aria-describedby","inputGroup-sizing-default"]) ?>
+
     </div>
   </div>
   <div class="col">
@@ -47,7 +38,9 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      <!-- <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"> -->
+      <?php echo $this->tag->textField(["CusSir", "size" => 30, "class" => "form-control", "id" =>"CusSir", "required" =>"", "placeholder" =>"Lastname","aria-describedby"=>"inputGroup-sizing-default"]) ?>
+
     </div>
   </div>
 <br>
@@ -56,18 +49,13 @@
 
   <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Number</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-  </div>
-
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
       <label class="input-group-text" for="inputGroupSelect01">Stay</label>
     </div>
-    <select class="custom-select" id="inputGroupSelect01">
+    <?php echo $this->tag->textField(["Here", "size" => 30, "class" => "form-control", "id" =>"Here", "required" =>"", "placeholder" =>"Lastname"]) ?>
+
+    <!-- <select class="custom-select" id="inputGroupSelect01">
       <option selected>Choose...</option>
-      <option value="1">ลักษณานิเวศ 1</option>
+      <option value="ลักษณานิเวศ 1">ลักษณานิเวศ 1</option>
       <option value="2">ลักษณานิเวศ 2</option>
       <option value="3">ลักษณานิเวศ 3</option>
       <option value="4">ลักษณานิเวศ 4</option>
@@ -103,8 +91,12 @@
       <option value="34">อาคารนวัตกรรม</option>
       <option value="35">คิวรถตู้</option>
       <option value="36">ศูนย์กีฬา</option>
+<<<<<<< HEAD
       <option value="37">สวนพฤษศาสตร์</option>
     </select>
+=======
+    </select> -->
+>>>>>>> 789bccd6f9765a04349aeb5667e16e33a7f3141a
   </div>
 
 
@@ -112,7 +104,9 @@
   <div class="input-group-prepend">
     <label class="input-group-text" for="inputGroupSelect01">Go Go</label>
   </div>
-  <select class="custom-select" id="inputGroupSelect01">
+  <?php echo $this->tag->textField(["Going", "size" => 30, "class" => "form-control", "id" =>"Going", "required" =>"", "placeholder" =>"Lastname"]) ?>
+
+  <!-- <select class="custom-select" id="inputGroupSelect01">
     <option selected>Choose...</option>
     <option value="1">ลักษณานิเวศ 1</option>
     <option value="2">ลักษณานิเวศ 2</option>
@@ -150,9 +144,18 @@
     <option value="34">อาคารนวัตกรรม</option>
     <option value="35">คิวรถตู้</option>
     <option value="36">ศูนย์กีฬา</option>
+<<<<<<< HEAD
     <option value="37">สวนพฤษศาสตร์</option>
   </select>
+=======
+  </select> -->
 </div>
-<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Let's Go!</a>
+
+<!-- <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Let's Go!</a> -->
+<?php echo $this->tag->submitButton(["Let's Go!", "class" => "btn btn-info"]) ?>
+
+<?php echo $this->tag->endForm(); ?>
+>>>>>>> 789bccd6f9765a04349aeb5667e16e33a7f3141a
+</div>
 
 </div>

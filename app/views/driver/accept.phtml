@@ -1,60 +1,46 @@
 
 
-  <span class="navbar-brand mb-0 h1">Navbar</span>
-</nav>
 <div class="container">
 
 
-<div class="container">
+<div class="container" style="margin-top : 100px">
   
   <h1><p style="text-align : center">Accept</p></h1><?php echo "<br>"; ?>
 
 </div>
+
+
 <div class="row">
-  <div class="col-md-4">
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header">รับแล้ว</div>
-          <div class="card-body"> 
-                <p class="card-text">ชื่อ : <?php echo " tho" ; ?></p>
-                <p class="card-text">นามสกุล : <?php echo " h" ; ?></p>
-                <p class="card-text">จุดเริ่มต้น : <?php echo " พละ";?></p>
-                <p class="card-text">จุดหมายปลายทาง : <?php echo " รวม5" ; ?></p>
-                
-                
-          </div>
-          <div class="card-footer">
-          <button type="button" class="btn btn-success btn-lg">
-                  <span class="glyphicon glyphicon-ok" ></span></button>
-                <button type="button" class="btn btn-danger btn-lg"></button>
-          </div>
+    <?php foreach ($pass as $pass): ?>
+    <?php $colorbg = array("bg-info","bg-dark");
+    $colorcbg = rand(0,1);
+    for($i=0;$i<7;$i++){
+        if($colorcbg == $i){
+            $colorcbg = $colorbg[$i] ;
+        }
+    }
+    ?>
+    <div class="col-md-4">
+        <div class="card text-white <?php echo $colorcbg ?> mb-3" style="max-width: 18rem;">
+            <div class="card-header">
+                <?php if($pass->passStatus == 1){
+                    echo "รับแล้ว" ;
+                }else echo "รอรับ" ;
+                ?>
+            </div>
+                <div class="card-body"> 
+                    <p class="card-text">ชื่อ : <?php echo $pass->CusName ; ?></p>
+                    <p class="card-text">นามสกุล : <?php echo $pass->CusSir ; ?></p>
+                    <p class="card-text">จุดเริ่มต้น : <?php echo $pass->Here;?></p>
+                    <p class="card-text">จุดหมายปลายทาง : <?php echo $pass->Going; ?></p>
+                </div>
+                <div class="card-footer">
+                <button type="button" class="btn btn-success">ตอบรับ</button>
+                <button type="button" class="btn btn-danger">ปฏิเสธ</button>
+
+
+                </div>
         </div>
-      </div>
-  <div class="col-md-4">
-      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
-          <div class="card-body">
-                <h5 class="card-title">Primary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-  <div class="col-md-4">
-      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
-          <div class="card-body">
-                <h5 class="card-title">Primary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-  </div>
+    </div>
+    <?php endforeach; ?>
 </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-</html>
